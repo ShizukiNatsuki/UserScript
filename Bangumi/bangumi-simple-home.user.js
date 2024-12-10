@@ -12,3 +12,5 @@
 document.querySelector("#columnHomeB").remove()
 document.querySelector("#home_calendar").remove()
 document.querySelector("#home_grp_tpc").remove()
+
+document.querySelector("#navMenuNeue > li.doujin").remove()
