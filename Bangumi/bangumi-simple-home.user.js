@@ -5,12 +5,18 @@
 // @match       https://chii.in/
 // @match       https://bangumi.tv/
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      ShizukiNatsuki
 // ==/UserScript==
 
-document.querySelector("#columnHomeB").remove()
-document.querySelector("#home_calendar").remove()
-document.querySelector("#home_grp_tpc").remove()
+function remove(element) {
+    if (element !== null) {
+        element.remove()
+    }
+}
 
-document.querySelector("#navMenuNeue > li.doujin").remove()
+remove(document.querySelector("#columnHomeB"))
+remove(document.querySelector("#home_calendar"))
+remove(document.querySelector("#home_grp_tpc"))
+
+remove(document.querySelector("#navMenuNeue > li.doujin"))
